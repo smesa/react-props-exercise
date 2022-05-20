@@ -1,0 +1,78 @@
+@import-normalize;
+body {
+  background-color: #1d1d1d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+h1{
+  font-size: 4.5em;
+  font-weight: 800;
+  margin: 0;
+}
+
+h6{
+  font-size: .6em;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-top: 2em;
+  padding-left: 1em;
+}
+
+.header {
+  background-color: #464646;
+  color: #fff;
+  padding: 5em 2em;
+}
+
+.playlist-table {
+  border: none;
+  color: #fff;
+  font-size: .8em;
+  width: 100%;
+}
+
+.playlist-table td, .playlist-table th {
+  border: none;
+  padding: .5em;
+}
+
+.playlist-table th {
+  font-weight: 100;
+  border-bottom: 1px solid #464646;
+  padding-bottom: 14px;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.playlist-table tr {
+  cursor: pointer;
+}
+
+.playlist-table tr:hover {
+  background-color: #464646;
+}
+
+.playlist-table tr td{
+  padding-top: 14px;
+  text-align: left;
+}
+
+.playlist-table tr td:first-child {
+  text-align: center;
+}
+
+.playlist-table tr td:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.playlist-table tr td:nth-child(2) img {
+  margin-right: 20px;
+}
+
+
+
