@@ -12,14 +12,16 @@ export const PlayList = ({ songs }) => {
                             <th style={{ width: '5%', textAlign: 'center' }} >#</th>
                             <th style={{ width: '40%' }}>TITULO</th>
                             <th style={{ width: '30%' }}>ALBUM</th>
-                            <th style={{ width: '25%' }}>FECHA DE INCORPORACION</th>
+                            <th style={{ width: '20%' }}>FECHA</th>
+                            <th style={{ width: '5%', textAlign: 'center' }}>DURACION</th>
+
                         </tr>
                     </thead>
                     <tbody>
                         {
                             songs.map((song, index) => {
                                 return (
-                                    <PlayListItem song={song} index={index} key={song.name} />
+                                    <PlayListItem song={song} index={index} key={song.name} time={song.time} />
                                 )
                             })
                         }

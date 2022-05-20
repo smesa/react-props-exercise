@@ -4,7 +4,8 @@ export const songs = [
         "name": "Just the Way You Are",
         "artist": "Bruno Mars",
         "album": "Doo-Wops & Hooligans",
-        "date": "2010-10-05"
+        "date": "2010-10-05",
+        "time": "3:00"
     },
     {
         "img": "https://i.scdn.co/image/ab67616d0000485176cc6eedca8eb381afcd1e46",

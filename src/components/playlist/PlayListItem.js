@@ -1,7 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { PlayListItemAvatar } from './PlayListItemAvatar'
 
-export const PlayListItem = ({ song: { img, name, artist, album, date }, index }) => {
+export const PlayListItem = ({ song: { img, name, artist, album, date }, index, time }) => {
     return (
         <>
             <tr>
@@ -11,7 +13,18 @@ export const PlayListItem = ({ song: { img, name, artist, album, date }, index }
                 </td>
                 <td>{album}</td>
                 <td>{date}</td>
+                <td style={{ textAlign: 'center' }}>{time} min</td>
             </tr>
         </>
     )
+}
+
+
+PlayListItem.propTypes = {
+    song: PropTypes.object.isRequired,
+    index: PropTypes.number.isRequired
+}
+
+PlayListItem.defaultProps = {
+    time: '00:00'
 }
